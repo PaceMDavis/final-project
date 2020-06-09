@@ -1,4 +1,5 @@
 import React from 'react'
+import vectorImg from '../images/vectorImg.png'
 
 
 class LoginForm extends React.Component {
@@ -11,27 +12,34 @@ class LoginForm extends React.Component {
   render() {
     return (
       <div class="login-div">
-        <form class='login-form'>
-          <input 
-          class ='input'
-          label="username"
-          name="username"
-          required-id="standard-required"
-          placeholder="Username"
-          />
-          <input 
-          class ='input'
-          label="password"
-          name='password'
-          required-id="standard-password-input"
-          placeholder="Password"
-          />
-            <div id="lower">
-              <p id="signup-p">Sign Up</p>
-              <button type="submit" id="button-login">Submit</button>
-            </div>
-          
-        </form>
+        <div class="overlay">
+          <div id='img-holder'>
+            <img src={vectorImg} />
+          </div>
+          <form class='login-form'>
+            <input 
+            class ='input'
+            label="username"
+            name="username"
+            required-id="standard-required"
+            placeholder="Username"
+            />
+            <input 
+            class ='input'
+            label="password"
+            type='password'
+            name='password'
+            required-id="standard-password-input"
+            placeholder="Password"
+            />
+              <div id="lower">
+                <p id="signup-p">Not a member?
+                  <span>Sign up!</span>
+                </p>
+                <button type="submit" id="button-login">Login</button>
+              </div>
+          </form>
+        </div>
       </div>
     )
   }

@@ -137,26 +137,27 @@
 }
 
 .navItemsMobile {
-  display:none;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  animation: moveInRight 0.5s ease-out;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
 }
 
-.hidden {
-  display:none;
+.navItemsMobile img {
+  width: 120px;
+  margin-bottom: -50px
 }
 
-.show {
-  display: block; 
+.mobileNavList {
+  color: white;
+  font-weight: 1000;
+  font-size: 36px;
+  margin-top:-20px
 }
-
-.showNav {
-  display: flex !important;
-  z-index:1
-}
-
 
 @media (min-width:768px) {
   .login-div {

@@ -1,3 +1,7 @@
+CREATE database if not exists skate_data;
+
+USE skate_data;
+
 DROP TABLE IF EXISTS spots, social, users;
 
 CREATE TABLE users (
